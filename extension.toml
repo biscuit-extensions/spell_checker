@@ -1,0 +1,7 @@
+[extension]
+id = "spell_checker"
+name = "Spell Checker"
+version = "0.1.0"
+description = "Spell Checker extension for Biscuit"
+author = "biscuit-extensions"
+icon = "icon.png"
