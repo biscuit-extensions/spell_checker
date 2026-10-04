@@ -1,7 +1,21 @@
 [extension]
 id = "spell_checker"
 name = "Spell Checker"
-version = "0.1.0"
-description = "Spell Checker extension for Biscuit"
-author = "biscuit-extensions"
+version = "0.2.0"
+description = "Source code typo detector, camelCase tokenizer, Levenshtein suggestion generator, and custom dictionary"
+author = "tomlin7"
 icon = "icon.png"
+
+[dependencies]
+python = [
+    "pyspellchecker>=0.8.0"
+]
+tools = []
+
+[contributes]
+commands = [
+    { id = "spell_checker.check_document", title = "Spell Check: Check Current Document" },
+    { id = "spell_checker.check_selection", title = "Spell Check: Check Selection" },
+    { id = "spell_checker.add_word", title = "Spell Check: Add Word to Custom Dictionary" },
+    { id = "spell_checker.show_suggestions", title = "Spell Check: Show Suggestions" }
+]
